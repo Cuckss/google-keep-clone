@@ -14,22 +14,22 @@ const CreateNote=({filterSearch})=>{
        
       
       
-          let savedNotes;
+          
         useEffect(() => {
-             savedNotes = JSON.parse(localStorage.getItem("notes"));
+            const savedNotes = JSON.parse(localStorage.getItem("notes"));
             console.log(savedNotes)
-            savedNotes.map((note)=>{
+          savedNotes &&  savedNotes.map((note)=>{
                 dispatch(addNote(note))
             })
            
           }, [dispatch]);
         //   console.log("yourfi",filterSearch)
-            let filteredNotes=notes && notes.filter((item)=>{
-            return item.title.toLowerCase().includes(filterSearch.toLowerCase()) ;
-           })
-           console.log("your filtered notes  ",filteredNotes)
-          console.log("notes are",notes)
-        notes=filteredNotes;
+        //     let filteredNotes=notes && notes.filter((item)=>{
+        //     return item.title.toLowerCase().includes(filterSearch.toLowerCase()) ;
+        //    })
+        //    console.log("your filtered notes  ",filteredNotes)
+        //   console.log("notes are",notes)
+        // notes=filteredNotes;
         
         function displaytextArea(e){
             e.stopPropagation(); 
