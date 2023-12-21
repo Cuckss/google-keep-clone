@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cuckss/google-keep-clone/static/css/main.0c2ac754.css",
+    "main.js": "/Cuckss/google-keep-clone/static/js/main.d6e90a17.js",
+    "index.html": "/Cuckss/google-keep-clone/index.html",
+    "main.0c2ac754.css.map": "/Cuckss/google-keep-clone/static/css/main.0c2ac754.css.map",
+    "main.d6e90a17.js.map": "/Cuckss/google-keep-clone/static/js/main.d6e90a17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c2ac754.css",
+    "static/js/main.d6e90a17.js"
+  ]
+}
