@@ -1,0 +1,35 @@
+/* Container for the note */
+.note-div {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    row-gap: 4vh;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    min-height: 30vh; /* Set a minimum height */
+    box-sizing: border-box;
+   border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for buttons inside the note */
+  .note-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  .notes{
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .select-div{
+    background-color: transparent;
+    border-radius: 10px;
+    outline: none;
+    
+    margin-right: 10px;
+  }

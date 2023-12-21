@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./Components/headerFolder/Header";
+import "./App.css"
+import CreateNote from "./Components/createNoteFolder/CreateNote";
+import { useSelector } from "react-redux";
+  import { useState } from "react";
 function App() {
+  const notes=useSelector((state)=>state.createNote)
+  const[filterSearch,setFilterSearch]=useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header setFilterSearch={setFilterSearch} filterSearch={filterSearch}/>
+      <CreateNote filterSearch={filterSearch}/>
     </div>
   );
 }

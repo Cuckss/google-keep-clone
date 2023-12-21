@@ -1,0 +1,30 @@
+.navbar{
+    display:flex;
+    align-items: center;  
+    padding:10px 20px;
+    border-bottom: 0.5px solid rgb(157, 154, 154);
+    position: sticky;
+    z-index: 100;
+    top:0;
+    left:0;
+    background-color:rgb(255, 255, 121);
+}
+.navbar img{
+    width:3rem;
+    height:3rem;
+}
+.nav-searchbar{
+    width: 20rem;
+   margin:auto;
+   height:2rem;
+   border-radius:10px;
+   border: none;
+   background-color:rgb(205, 205, 87); ;
+
+}
+.nav-searchbar:focus{
+    outline: none;
+}
+.navbar *:hover{
+    cursor: pointer;
+}

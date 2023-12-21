@@ -1,0 +1,47 @@
+.textarea{
+    resize: none;
+}
+.note-form{
+    display: flex;
+    flex-direction: column;
+    height:25vh;
+    border-radius: 10px;
+    padding: 10px;
+    row-gap: 2px;
+    background-color:white;
+    
+}
+.add-note{
+    max-width: 30%;
+    margin:auto;
+    padding: 5px;  
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.form-input{
+    border: none;
+    height:7rem;
+    font-size: 22px;
+}
+.form-input:focus{
+    outline: none;
+}
+.textarea{
+    border:none;
+    font-size: 22px;
+    
+}
+.textarea:focus{
+    outline:none;
+}
+.notes-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 30px;
+    
+}
+.modal-div{
+    margin-top:30vh;
+}
